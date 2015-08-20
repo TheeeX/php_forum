@@ -29,7 +29,7 @@ else
 						  post_by) 
 				VALUES ('" . $_POST['reply-content'] . "',
 						NOW(),
-						" . mysql_real_escape_string($_GET['id']) . ",
+						" . $_GET['id'] . ",
 						" . $_SESSION['user_id'] . ")";
 						
 		$result = mysqli_query($con, $sql);

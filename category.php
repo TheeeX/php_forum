@@ -4,7 +4,7 @@ include 'connect.php';
 include 'header.php';
 
 //first select the category based on $_GET['cat_id']
-$cat =  mysql_real_escape_string($_GET['id']);
+$cat =  $_GET['id'];
 $sql = "SELECT
 			cat_id,
 			cat_name,
@@ -42,7 +42,7 @@ if(mysqli_num_rows($result) == 0)
 				FROM
 					topics
 				WHERE
-					topic_cat = '" . mysql_real_escape_string($_GET['id']) . "'";
+					topic_cat = '" . $_GET['id'] . "'";
 		
 		$result = mysqli_query($con, $sql);
 		

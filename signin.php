@@ -63,7 +63,7 @@ else
 					FROM
 						users
 					WHERE
-						user_name = '" . mysql_real_escape_string($_POST['user_name']) . "'
+						user_name = '" .$_POST['user_name'] . "'
 					AND
 						user_pass = '" . sha1($_POST['user_pass']) . "'";
 						

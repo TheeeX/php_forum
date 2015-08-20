@@ -9,12 +9,12 @@ if($_SERVER['REQUEST_METHOD'] != 'POST')
 {
     /*the form hasn't been posted yet, display it
 	  note that the action="" will cause the form to post to the same page it is on */
-    echo '<form method="post" action="">
- 	 	Username: <input type="text" name="user_name" />
- 		Password: <input type="password" name="user_pass">
-		Password again: <input type="password" name="user_pass_check">
-		E-mail: <input type="email" name="user_email">
- 		<input type="submit" value="Add category" />
+    echo '<form method="post" action=""></br>
+ 	 	Username: <input type="text" name="user_name" /></br>
+ 		Password: <input type="password" name="user_pass"></br>
+		Password: <input type="password" name="user_pass_check"></br>
+		E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="email" name="user_email"></br>
+ 		<input type="submit" value="Register" />
  	 </form>';
 }
 else
@@ -73,9 +73,9 @@ else
 		//also notice the sha1 function which hashes the password
 		$sql = "INSERT INTO
 					users(user_name, user_pass, user_email ,user_date, user_level)
-				VALUES('" . mysql_real_escape_string($_POST['user_name']) . "',
+				VALUES('" . $_POST['user_name'] . "',
 					   '" . sha1($_POST['user_pass']) . "',
-					   '" . mysql_real_escape_string($_POST['user_email']) . "',
+					   '" . $_POST['user_email'] . "',
 						NOW(),
 						0)";
 						

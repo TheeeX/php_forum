@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="description" content="A short description." />
 	<meta name="keywords" content="put, keywords, here" />
-	<title>PHP-MySQL forum</title>
+	<title>Artistarc</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <style>
@@ -130,12 +130,12 @@ textarea {
 }
 </style>
 <body>
-<h1>My forum</h1>
+<h1>Artistarc</h1>
 	<div id="wrapper">
 	<div id="menu">
 		<a class="item" href="/forum/index.php">Home</a> -
-		<a class="item" href="/forum/create_topic.php">Create a topic</a> -
-		<a class="item" href="/forum/create_cat.php">Create a category</a>
+		<a class="item" href="/forum/create_topic.php">Message</a> -
+		<a class="item" href="/forum/create_cat.php">Create group</a>
 		
 		<div id="userbar">
 		<?php
@@ -147,7 +147,7 @@ textarea {
 	 	}
  	else
  	{
- 		echo '<a href="signin.php">Sign in</a> or <a href="sign up">create an account</a>.';
+ 		echo '<a href="signin.php">Sign in</a> or <a href="signup.php">create an account</a>.';
  	}
 ?>
 </div>

@@ -87,9 +87,9 @@ else
                                topic_date,
                                topic_cat,
                                topic_by)
-                   VALUES('" . mysql_real_escape_string($_POST['topic_subject']) . "',
+                   VALUES('" . $_POST['topic_subject'] . "',
                                NOW(),
-                               '" . mysql_real_escape_string($_POST['topic_cat']) . "',
+                               '" . $_POST['topic_cat'] . "',
                                '" . $_SESSION['user_id'] . "'
                                )";
 					 
@@ -112,7 +112,7 @@ else
 								  post_date,
 								  post_topic,
 								  post_by)
-						 VALUES('" . mysql_real_escape_string($_POST['post_content']) . "',
+						 VALUES('" . $_POST['post_content'] . "',
 								  NOW(),
 								  '" . $topicid . "',
 								  '" . $_SESSION['user_id'] . "')";

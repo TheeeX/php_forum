@@ -36,8 +36,8 @@ else
 		//prepare the table
 		echo '<table border="1">
 			  <tr>
-				<th>Category</th>
-				<th>Last topic</th>
+				<th><!--Category-->Group</th>
+				<th><!--Last topic-->Last Post</th>
 			  </tr>';	
 			
 		while($row = mysqli_fetch_array($result))
@@ -74,7 +74,7 @@ else
 					{
 						if(mysqli_num_rows($topicsresult) == 0)
 						{
-							echo 'no topics';
+							echo '<!--no topics-->no posts';
 						}
 						else
 						{

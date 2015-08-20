@@ -19,8 +19,8 @@ else
 {
     //the form has been posted, so save it
     $sql = "INSERT INTO categories(cat_name, cat_description)
- 	   VALUES( '".mysql_real_escape_string($_POST['cat_name'])."',
- 		      '".mysql_real_escape_string($_POST['cat_description'])."' )";
+ 	   VALUES( '".$_POST['cat_name']."',
+ 		      '".$_POST['cat_description']."' )";
     $result = mysqli_query($con, $sql);
     if(!$result)
     {

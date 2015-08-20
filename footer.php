@@ -1,3 +1,3 @@
-<div id="footer">Created for Nettuts+</div>
+<div id="footer">@Artistarc</div>
 </body>
 </html>
